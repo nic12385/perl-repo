@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-# Nicholas Zaleski PID 720270935
 
 use warnings;
 use diagnostics;
@@ -49,13 +48,12 @@ if (@name) # if array has value then prints output
 	print "\n";
 	print "Name                     Phone Number\n";
 	print "---------------          --------------\n";	
-	for ($i=0; $i < scalar(@name); $i++)
+	
 	{
-		$space= " " x (25-length($name[$i]));
-
-		print "$name[$i]$space($area[$i])$phone[$i]\n";
+	
+		printf "%-20s","%-20s","%-10s","$name,$space($area[$i])$phone[$i]\n";
 
 	}
 }
 
-#comment
+
